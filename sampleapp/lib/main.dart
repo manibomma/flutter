@@ -4,7 +4,7 @@ import 'package:english_words/english_words.dart';
 void main() => runApp(MyAppTest());
 
 class MyAppTest extends StatelessWidget {
-  
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,6 +30,8 @@ class RandomWordsState extends State<RandomWords> {
   
   @override
   Widget build(BuildContext context) {
+    final _suggestions = <WordPair>[];
+    final biggerFont = const TextStyle(fontSize: 18.0);
     final wordPair = WordPair.random();
     return Text(wordPair.asPascalCase);
   }

@@ -49,3 +49,5 @@ Observations :
 6. Implementing a Stateful Widget requires 2 classes :
     a. a StatefulWidget class that creates an instance of State class
     b. a State class
+
+7. Prefixing an identifier with an '_' (underscore) enforces privacy in Dart language
