@@ -37,7 +37,7 @@ class RandomWordsState extends State<RandomWords> {
   Widget _buildSuggestions() {
     return ListView.builder(
       padding: const EdgeInsets.all(16.0),
-      itemCount: 200,
+      //itemCount: 200,  // limits the max list count
       itemBuilder: (context, i) {
        // Add a one-pixel-high divider widget before each row in theListView.
         if (i.isOdd) return Divider();

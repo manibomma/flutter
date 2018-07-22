@@ -52,7 +52,8 @@ Observations :
 
 7. Prefixing an identifier (variable or Method names) with an '_' (underscore) enforces privacy in Dart language
 
-8. ListView.builder();
+8. ListView.builder() :
+
         a. Creates a scrollable, linear array of widgets that are created on demand.
 
         b. This constructor is appropriate for list views with a large (or infinite) number of children because the builder is called only for those children that are actually visible.
@@ -61,5 +62,7 @@ Observations :
 
         d. The "itemBuilder" callback will be called only with indices greater than or equal to zero and less than itemCount. i.e., itemBuilder will be called only 100 times if itemCount is set to 100
 
-        NOTE : The "itemBuilder" should actually create the widget instances when called. Avoid using a builder that returns a previously-constructed widget; if the list view's children are created in advance, or all at once when the ListView itself is created, it is more efficient to use [new ListView]. Even more efficient, however, is to create the instances on demand using this constructor's itemBuilder callback.
+        NOTE : The "itemBuilder" should actually create the widget instances when called. Avoid
+         using a builder that returns a previously-constructed widget; if the list view's children
+         are created in advance, or all at once when the ListView itself is created, it is more efficient to use [new ListView]. Even more efficient, however, is to create the instances on demand using this constructor's itemBuilder callback.
 
