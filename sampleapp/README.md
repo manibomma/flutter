@@ -71,3 +71,4 @@ Observations :
          efficient to use [new ListView]. Even more efficient, however, is to create the instances
           on demand using this constructor's itemBuilder callback.
 
+9. When a tile is tapped, the function call setState() to notify the framework that the state has been changed.
