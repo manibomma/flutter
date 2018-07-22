@@ -41,3 +41,5 @@ Observations :
 2. In flutter almost everything is a Widget
 
 3. A Widget's main job is to provide a build() method, which describes how to display the widget, in terms of other lower level widgets 
+
+4. pubspec.yaml manages the assets(dependencies, dev-dependencies, app level flutter settings) for a flutter app.
