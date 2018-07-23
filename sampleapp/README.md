@@ -72,3 +72,7 @@ Observations :
           on demand using this constructor's itemBuilder callback.
 
 9. When a tile is tapped, the function call setState() to notify the framework that the state has been changed.
+
+10. Each screen is called a "Route" in flutter
+
+11. In Flutter, Navigator manages a stack containing the app's routes. Pushing a route on to the Navigator's stack updates the display to that route while popping it will return to the previous display
