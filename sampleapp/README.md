@@ -75,4 +75,18 @@ Observations :
 
 10. Each screen is called a "Route" in flutter
 
-11. In Flutter, Navigator manages a stack containing the app's routes. Pushing a route on to the Navigator's stack updates the display to that route while popping it will return to the previous display
+11. In Flutter, Navigator manages a stack containing the app's routes. Pushing a route on to the Navigator's stack updates the display to that route while popping it will return to the previous display.
+    e.g : Naviagtor.of(context).push(
+            MaterialPageRoute(
+                builder : (context) {
+                    return Scaffold(
+                        appBar: AppBar(
+                        title: Text('Favourite Names'),
+                        ),
+                        body: Text('New Page'),
+                    );
+                }
+            )
+          )
+    MaterialPageRoute --> creates a new page route
+    builder --> builds the primary content of the route

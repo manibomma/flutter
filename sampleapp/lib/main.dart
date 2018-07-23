@@ -34,7 +34,34 @@ class RandomWordsState extends State<RandomWords> {
   }
 
   void _pushSaved() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) {
+          final tiles = _saved.map(
+              (eachWord) {
+                return ListTile(
+                  title: Text(
+                    eachWord.asPascalCase,
+                    style: _biggerFont,
+                  ),
+                );
+              }
+            );
+          
+          final divider = ListTile.divideTiles(
+            context: context,
+            tiles: tiles
+          ).toList();
 
+          return Scaffold(
+            appBar: AppBar(
+              title: Text('Favourite Names'),
+            ),
+            body: ListView(children: divider),
+          );
+        }
+      )
+    );
   }
 
   Widget _buildSuggestions() {
